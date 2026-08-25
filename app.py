@@ -13,3 +13,6 @@ def about():
 @app.route("/my-projects")
 def my_projects():
     return  render_template("my-projects.html")
+
+if __name__ == "__main__":
+    app.run(debug=True)
