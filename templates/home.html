@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shani-portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        SHANI AGRAHARI
+    </div>
+
+    <nav>
+        <a href="/" class="active">Home</a>
+        <a href="/my-projects" class="unactive">My Projects</a>
+        <a href="/about" class="unactive">About Me</a>
+    </nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Hi !, I'm<br>
+            <span>Shani Agrahari</span>
+        </h1>
+
+        <h3>
+            B.Sc. (I.T.) Student | <span>Aspiring Full-Stack</span> Developer
+        </h3>
+
+        <p>
+            I Build practical web applications and <br>love turning ideas into real projects. 
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="/my-projects" class="primary-btn">
+                View My Projects &rarr;
+            </a>
+
+            <a href="/about" class="secondary-btn">
+                About Me
+            </a>
+
+        </div>
+
+        <div class="social-media">
+            <!--GitHub-->
+            <a href="#">
+            <i class="fa-brands fa-github"></i>
+            </a>
+
+            <!--LinkedIn-->
+            <a href="#">
+            <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <!--Instagram-->
+            <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <!--G-Mail-->
+            <a href="#">
+            <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+      <div class="hero-image">
+            <img src="{{ url_for('static', filename='images/image.jpeg') }}">
+      </div>
+    </div>
+
+</section>
+
+<!-- ================= SKILLS ================= -->
+
+<section class="skills-section">
+    <h1> Skills </h1>
+    <hr>
+    <div class="skills">
+        <div class="skill-icon html" >
+          <i class="fa-brands fa-html5"></i>
+          <span>HTML5</span>
+        </div>
+
+        <div class="skill-icon css">
+          <i class="fa-brands fa-css3-alt"></i>
+          <span>CSS3</span>
+        </div>
+
+        <div class="skill-icon sql">
+          <i class="fa-solid fa-database"></i>
+          <span>SQL</span>
+        </div>
+
+        <div class="skill-icon python">
+          <i class="fa-brands fa-python"></i>
+          <span>Python</span>
+        </div>
+
+        <div class="skill-icon">
+          <i> 🌶️ </i>
+          <span>Flask</span>
+        </div>
+
+        <div class="skill-icon github">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FEATURED PROJECTS ================= -->
+
+<section class="featured-projects">
+    <h1> Featured Projects</h1>
+    <hr>
+
+    <div class="projects">
+       <div class="projects-img">
+        <img src="{{ url_for('static', filename='images/freelancehub.png') }}">
+       </div>
+
+       <div class="projects-detail">
+         <div class="titles">
+           <h2> FreelanceHub</h2>
+           <span> Flask Project</span>
+         </div>
+
+          <p>
+            A Freelance Marketplace where clients can find freelancers and freelancers can find projects according to their needs. 
+          </p>
+            <p>
+            Freelancers can bid on projects and clients can choose any one of them for  their projects.
+          </p>
+          <div class="used">
+          <h3>Languages used :<br></h3>
+          <span>Flask</span>
+          <span>SQLlite</span>
+          <span>SQLAlchemy</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          </div>
+
+          <div class="hero-buttons">
+
+            <a href="#" class="primary-btn">
+                View Live Demo &rarr;
+            </a>
+
+            <a href="#" class="secondary-btn">
+                View on GitHub
+            </a>
+
+        </div>
+       </div>
+    </div>
+</section>
+
+<div class="view"><a href="/my-projects"> View More &rarr;</a></div>
+
+<!-- ================= CONTACT ME ================= -->
+
+<div class="contact">
+    
+    <div class="message">
+        <h3> Let's Work together !</h3><br>
+        <p> I'm open to Interships, Collaborations and Interesting projects.</p>
+    </div>
+
+    <div class="btn">
+        <a href="#">
+        <i class="fa-solid fa-envelope"></i>
+        Contact Me
+        </a>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-center">
+        &copy; 2026 <span>Shani Agrahari</span>. All Rights Reserved.
+    </div>
+
+    <div class="footer-right">
+        Made with ❤️ &amp; lots of ☕
+    </div>
+</footer>
+</body>
+</html>

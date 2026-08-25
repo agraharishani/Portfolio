@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Projects | Shani Agrahari </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/projects.css') }}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        SHANI AGRAHARI
+    </div>
+
+    <nav>
+        <a href="/" class="unactive">Home</a>
+        <a href="/my-projects" class="active">My Projects</a>
+        <a href="/about" class="unactive">About Me</a>
+    </nav>
+
+</header>
+<section class="featured-projects">
+    <h1> My Projects</h1>
+    <hr>
+    <p class="thanks"> Things I've built so far </p>
+
+    <div class="projects">
+       <div class="projects-img">
+        <img src="{{ url_for('static', filename='images/freelancehub.png') }}">
+       </div>
+
+       <div class="projects-detail">
+         <div class="titles">
+           <h2> FreelanceHub</h2>
+           <span> Flask Project</span>
+         </div>
+
+           <p>
+            A Freelance Marketplace(in progress) where clients can find freelancers and freelancers can find projects according to their needs. 
+          </p>
+            <p>
+            Freelancers can bid on projects and clients can choose any one of them for  their projects.
+          </p>
+          <div class="used">
+          <h3>Languages used :<br></h3>
+          <span>Flask</span>
+          <span>SQLlite</span>
+          <span>SQLAlchemy</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          </div>
+
+          <div class="hero-buttons">
+
+            <a href="#" class="primary-btn">
+                View Live Demo &rarr;
+            </a>
+
+            <a href="#" class="secondary-btn">
+                View on GitHub
+            </a>
+
+        </div>
+       </div>
+    </div>
+    <div class="projects">
+       <div class="projects-img">
+        <img src="{{ url_for('static', filename='images/cawalagyan.png') }}">
+       </div>
+
+       <div class="projects-detail">
+         <div class="titles">
+           <h2> <i>CAwalaGyan</i></h2>
+           <span> Flask Project</span>
+         </div>
+
+           <p>
+            CAwalaGyan a Website(in progress) custom made for a CA company which I wanted to try building something new and unique.
+          </p>
+            <p>
+            It will consist of Admin login, Appointment page, and will also include About CA and his team. It's in development phase due to lack of professional info on the company.  
+          </p>
+          <div class="used">
+          <h3>Languages used :<br></h3>
+          <span>Flask</span>
+          <span>SQLlite</span>
+          <span>SQLAlchemy</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          </div>
+
+          <div class="hero-buttons">
+
+            <a href="#" class="primary-btn">
+                View Live Demo &rarr;
+            </a>
+
+            <a href="#" class="secondary-btn">
+                View on GitHub
+            </a>
+
+        </div>
+       </div>
+    </div>
+    <div class="thanks"> Working on New Projects will be available soon. </div>
+</section>
+<footer>
+    <div class="footer-center">
+        &copy; 2026 <span>Shani Agrahari</span>. All Rights Reserved.
+    </div>
+
+    <div class="footer-right">
+        Made with ❤️ &amp; lots of ☕
+    </div>
+</footer>
+</body>
+</html>

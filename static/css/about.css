@@ -1,0 +1,787 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background: rgb(48, 2, 95);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 48px;
+    background: black;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 21px;
+    font-weight: 700;
+    color: white;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 34px;
+    margin-left: 70px;
+}
+
+.navbar nav a {
+    font-size: 18px;
+    padding: 27px 0;
+}
+
+.navbar nav .unactive {
+    color: white;
+}
+
+.navbar nav a:hover,
+.navbar nav .active {
+    color: purple;
+    border-bottom: 2px solid purple;
+}
+
+/* ================= ABOUT ME ================= */
+
+.about_me hr {
+    width: 70px;
+    height: 3px;
+    background-color: purple;
+    border: none;
+    margin: 8px auto 20px;
+}
+
+.about_me h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: xxx-large;
+}
+
+.info {
+    display: flex;
+    min-height: 400px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.info-img {
+    margin-top: 15px;
+    width: 400px;
+}
+
+.info-img img {
+    width: 100%;
+    height: 70%;
+    border-radius: 50%;
+}
+
+.info-desc {
+    margin: 15px;
+    width: 750px;
+}
+
+.info-desc p {
+    font-style: italic;
+    font-size: 28px;
+}
+
+/* ================= PERSONAL INFO ================= */
+
+.info-personal {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    border: 0.5px solid #eeeeee;
+    margin: 30px;
+    margin-top: -90px;
+    padding: 15px;
+    text-align: center;
+    font-size: xx-large;
+    background: rgb(4, 4, 62);
+    font-style: italic;
+}
+
+/* ================= EDUCATION ================= */
+
+.edu hr {
+    width: 80px;
+    height: 3px;
+    background-color: purple;
+    border: none;
+    margin: 8px auto 20px;
+}
+
+.edu h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: xxx-large;
+}
+
+.educations {
+    margin: 20px;
+    display: flex;
+}
+
+.education {
+    display: flex;
+    border: 0.5px solid #eeeeee;
+    background: rgb(4, 4, 62);
+    padding: 15px;
+    margin: 15px;
+    font-style: italic;
+}
+
+.ed-logo {
+    font-size: 65px;
+    margin: 10px;
+    color: purple;
+    align-content: center;
+}
+
+/* ================= EXPERIENCE & CERTIFICATES ================= */
+
+.experience-certificate {
+    display: flex;
+}
+
+.experience hr {
+    width: 80px;
+    height: 3px;
+    background-color: purple;
+    border: none;
+    margin: 8px 0 20px;
+}
+
+.experience h1{
+    font-size: xxx-large;
+}
+
+.experience {
+    margin: 15px;
+    width: 50%;
+}
+
+.exp {
+    border: 0.5px solid #eeeeee;
+    background: rgb(4, 4, 62);
+    padding: 15px;
+}
+
+.exp {
+    display: flex;
+    border: 0.5px solid #eeeeee;
+    background: rgb(4, 4, 62);
+    padding: 15px;
+    margin: 15px;
+    font-style: italic;
+}
+
+.exp-logo {
+    font-size: 65px;
+    margin: 10px;
+    color: purple;
+    align-content: center;
+}
+
+.certificates hr {
+    width: 80px;
+    height: 3px;
+    background-color: purple;
+    border: none;
+    margin: 8px 5px 20px;
+}
+
+.certificates h1{
+    font-size: xxx-large;
+}
+
+.certificates {
+    margin: 15px;
+    width: 50%;
+}
+
+.cert {
+    border: 0.5px solid #eeeeee;
+    background: rgb(4, 4, 62);
+    padding: 15px;
+}
+
+.certs {
+    padding: 3px;
+    display: flex;
+    margin: 0.5px;
+    border: 0 solid #eeeeee;
+}
+
+.certs-logo {
+    margin-right: 10px;
+}
+
+/* ================= CONNECT ================= */
+
+.connect hr {
+    width: 80px;
+    height: 3px;
+    background-color: purple;
+    border: none;
+    margin: 8px auto 20px;
+}
+
+.connect h1{
+    text-align: center;
+    font-size: xxx-large;
+}
+
+.connect p {
+    text-align: center;
+    margin: 10px;
+    font-size: 22px;
+}
+
+.lets {
+    margin-left: 250px;
+    display: flex;
+}
+
+.content {
+    display: flex;
+    border: 0.5px solid #eeeeee;
+    background: rgb(4, 4, 62);
+    padding: 5px;
+    margin: 15px;
+    font-style: italic;
+}
+
+.content-logo {
+    font-size: 25px;
+    margin: 10px;
+    color: purple;
+    align-content: center;
+}
+
+.content-desc {
+    margin: 10px;
+}
+
+.social-media {
+    display: flex;
+    gap: 30px;
+    margin: 5px;
+    justify-content: center;
+}
+
+.social-media a {
+    color: white;
+    font-size: 40px;
+    transition: 0.2s;
+}
+
+
+.social-media a:hover {
+    color: purple;
+}
+
+footer {
+    position: relative;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer span{
+    color: purple;
+}
+
+.footer-right {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN — TABLETS & MOBILE
+   ========================================================= */
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+
+    /* ---------- NAVBAR ---------- */
+
+    .navbar {
+        padding: 0 30px;
+    }
+
+    .navbar nav {
+        gap: 25px;
+        margin-left: 0;
+    }
+
+
+    /* ---------- ABOUT ME ---------- */
+
+    .info {
+        width: calc(100% - 60px);
+        min-height: auto;
+        gap: 30px;
+    }
+
+    .info-img {
+        width: 35%;
+    }
+
+    .info-desc {
+        width: 65%;
+    }
+
+    .info-desc p {
+        font-size: 22px;
+    }
+
+
+    /* ---------- PERSONAL INFO ---------- */
+
+    .box {
+        margin: 20px;
+        margin-top: -40px;
+        font-size: x-large;
+    }
+
+
+    /* ---------- EDUCATION ---------- */
+
+    .educations {
+        margin: 20px;
+        gap: 10px;
+    }
+
+    .education {
+        margin: 5px;
+        padding: 12px;
+    }
+
+    .ed-logo {
+        font-size: 50px;
+    }
+
+
+    /* ---------- CONNECT ---------- */
+
+    .lets {
+        margin-left: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    /* ---------- NAVBAR ---------- */
+
+    .navbar {
+        height: auto;
+        min-height: 70px;
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .navbar nav {
+        width: 100%;
+        justify-content: center;
+        gap: 25px;
+        margin-left: 0;
+    }
+
+    .navbar nav a {
+        font-size: 15px;
+        padding: 8px 0;
+    }
+
+
+    /* ---------- ABOUT ME ---------- */
+
+    .about_me h1 {
+        font-size: 35px;
+        margin-top: 25px;
+    }
+
+    .info {
+        width: calc(100% - 30px);
+        min-height: auto;
+        margin: 0 15px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info-img {
+        width: 70%;
+        max-width: 300px;
+        margin-top: 10px;
+    }
+
+    .info-desc {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .info-desc p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+
+    /* ---------- PERSONAL INFO ---------- */
+
+    .info-personal {
+        width: 100%;
+        padding: 10px 15px 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    .box {
+        margin: 0;
+        padding: 12px 5px;
+        font-size: 18px;
+    }
+
+    .box h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .box span {
+        font-size: 11px;
+    }
+
+
+    /* ---------- EDUCATION ---------- */
+
+    .edu h1 {
+        font-size: 35px;
+    }
+
+    .educations {
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .education {
+        margin: 8px 0;
+        padding: 15px;
+        align-items: center;
+    }
+
+    .ed-logo {
+        font-size: 45px;
+        margin: 10px 15px 10px 5px;
+    }
+
+    .ed-desc {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .ed-desc br {
+        display: none;
+    }
+
+    .ed-desc p {
+        margin-bottom: 8px;
+    }
+
+
+    /* ---------- EXPERIENCE & CERTIFICATES ---------- */
+
+    .experience-certificate {
+        flex-direction: column;
+    }
+
+    .experience,
+    .certificates {
+        width: auto;
+        margin: 15px;
+    }
+
+    .experience h1,
+    .certificates h1 {
+        font-size: 35px;
+    }
+
+    .experience hr,
+    .certificates hr {
+        margin-left: 0;
+    }
+
+    .exp {
+        margin: 15px 0;
+        padding: 15px;
+        align-items: center;
+    }
+
+    .exp-logo {
+        font-size: 45px;
+        margin: 10px 15px 10px 5px;
+    }
+
+    .exp-desc {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .exp-desc br {
+        display: none;
+    }
+
+    .exp-desc p {
+        margin-bottom: 8px;
+    }
+
+    .cert {
+        padding: 12px;
+    }
+
+    .certs {
+        align-items: center;
+        gap: 10px;
+    }
+
+    .certs-logo {
+        font-size: 22px;
+    }
+
+    .certs-desc {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+
+    /* ---------- CONNECT ---------- */
+
+    .connect {
+        padding: 20px 15px;
+    }
+
+    .connect h1 {
+        font-size: 35px;
+    }
+
+    .connect p {
+        font-size: 16px;
+    }
+
+    .lets {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .content {
+        margin: 8px 0;
+        padding: 8px;
+        align-items: center;
+    }
+
+    .content-logo {
+        font-size: 22px;
+    }
+
+    .content-desc {
+        font-size: 14px;
+        word-break: break-word;
+    }
+
+
+    /* ---------- SOCIAL MEDIA ---------- */
+
+    .social-media {
+        gap: 25px;
+        margin: 20px 0;
+    }
+
+    .social-media a {
+        font-size: 30px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-right {
+        position: static;
+        transform: none;
+    }
+
+}
+
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 480px) {
+
+    /* ---------- NAVBAR ---------- */
+
+    .navbar {
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .navbar nav {
+        gap: 18px;
+    }
+
+    .navbar nav a {
+        font-size: 13px;
+    }
+
+
+    /* ---------- ABOUT ---------- */
+
+    .about_me h1 {
+        font-size: 30px;
+    }
+
+    .info-img {
+        width: 75%;
+        max-width: 250px;
+    }
+
+    .info-desc p {
+        font-size: 15px;
+    }
+
+
+    /* ---------- PERSONAL INFO ---------- */
+
+    .info-personal {
+        grid-template-columns: 1fr;
+        padding: 10px 30px 20px;
+        gap: 10px;
+    }
+
+    .box {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .box h3 {
+        font-size: 20px;
+    }
+
+    .box span {
+        font-size: 12px;
+    }
+
+
+    /* ---------- EDUCATION ---------- */
+
+    .edu h1,
+    .experience h1,
+    .certificates h1,
+    .connect h1 {
+        font-size: 30px;
+    }
+
+    .education {
+        align-items: flex-start;
+    }
+
+    .ed-logo {
+        font-size: 35px;
+        margin-right: 12px;
+    }
+
+    .ed-desc {
+        font-size: 13px;
+    }
+
+
+    /* ---------- EXPERIENCE ---------- */
+
+    .exp {
+        align-items: flex-start;
+    }
+
+    .exp-logo {
+        font-size: 35px;
+        margin-right: 12px;
+    }
+
+    .exp-desc {
+        font-size: 13px;
+    }
+
+
+    /* ---------- CERTIFICATES ---------- */
+
+    .certs-desc {
+        font-size: 13px;
+    }
+
+
+    /* ---------- CONNECT ---------- */
+
+    .connect p {
+        font-size: 14px;
+    }
+
+    .content-desc {
+        font-size: 13px;
+    }
+
+    .social-media a {
+        font-size: 27px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+        font-size: 12px;
+    }
+
+}

@@ -1,0 +1,528 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background: rgb(48, 2, 95);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 48px;
+    background: black;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 21px;
+    font-weight: 700;
+    color: white;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 34px;
+    margin-left: 70px;
+}
+
+.navbar nav a {
+    font-size: 18px;
+    padding: 27px 0;
+}
+
+.navbar nav .unactive {
+    color: white;
+}
+
+.navbar nav a:hover,
+.navbar nav .active {
+    color: purple;
+    border-bottom: 2px solid purple;
+}
+
+/* ================= PROJECTS ================= */
+
+.featured-projects {
+    margin: 15px;
+}
+
+.featured-projects hr {
+    width: 60px;
+    height: 3px;
+    background-color: purple;
+    border: none;
+    margin: 8px auto 20px;
+}
+
+.featured-projects h1{
+    text-align: center;
+    margin-top: 12px;
+    font-size: xxx-large;
+}
+
+.thanks {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 18px;
+    margin-top: 20px;
+}
+
+.projects{
+    border: 0 solid purple;
+    border-radius: 15px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.projects-img {
+    width: 50%;
+    border: 0 solid #7695bd;
+    margin: 10px;
+}
+
+.projects-img img {
+    width: 595px;
+    height: auto;
+}
+
+.projects-detail {
+    padding: 10px;
+}
+
+.projects-detail h2{
+    font-size: 35px
+}
+
+.titles span{
+    border: 2px solid purple;
+    border-radius: 10px;
+    padding: 5px;
+    color: purple;
+    margin-left: 200px;
+    background-color: rgb(201, 100, 201);
+}
+
+.projects-detail p{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.titles{
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.used h3{
+    margin: 15px;
+}
+
+.used span{
+    border: 2px solid purple;
+    margin: 10px;
+    padding: 5px;
+    color: purple;
+    border-radius: 15px;
+}
+
+.view a{
+    color: white;
+}
+
+.view a:hover{
+    color: purple;
+}
+
+.view {
+    text-align: center;
+    margin: 10px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 22px;
+    margin-bottom: 25px;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 12px 22px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.primary-btn {
+    background: purple;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: white;
+    color: black;
+}
+
+.secondary-btn {
+    border: 1px solid #7695bd;
+    color: white;
+    
+}
+
+.secondary-btn:hover {
+    border: 1px solid purple;
+    background: purple;
+    color: white;
+    
+}
+
+footer {
+    position: relative;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer span{
+    color: purple;
+}
+
+.footer-right {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN — TABLETS & MOBILE
+   ========================================================= */
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+
+    /* ---------- NAVBAR ---------- */
+
+    .navbar {
+        padding: 0 30px;
+    }
+
+    .navbar nav {
+        gap: 25px;
+        margin-left: 0;
+    }
+
+
+    /* ---------- PROJECTS ---------- */
+
+    .projects {
+        width: calc(100% - 40px);
+    }
+
+    .projects-img {
+        width: 50%;
+    }
+
+    .projects-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .projects-detail {
+        padding: 15px;
+    }
+
+    .projects-detail h2 {
+        font-size: 28px;
+    }
+
+    .titles {
+        width: 100%;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .titles span {
+        margin-left: auto;
+        font-size: 12px;
+    }
+
+    .projects-detail p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    /* ---------- NAVBAR ---------- */
+
+    .navbar {
+        height: auto;
+        min-height: 70px;
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .navbar nav {
+        width: 100%;
+        justify-content: center;
+        gap: 25px;
+        margin-left: 0;
+    }
+
+    .navbar nav a {
+        font-size: 15px;
+        padding: 8px 0;
+    }
+
+
+    /* ---------- PROJECT PAGE ---------- */
+
+    .featured-projects {
+        margin: 20px 15px;
+    }
+
+    .featured-projects h1 {
+        font-size: 35px;
+    }
+
+    .thanks {
+        font-size: 17px;
+        line-height: 1.5;
+        margin: 15px 0 20px;
+    }
+
+
+    /* ---------- PROJECT CARD ---------- */
+
+    .projects {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 25px 0;
+        border-radius: 12px;
+    }
+
+    .projects-img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .projects-img img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 10px;
+    }
+
+    .projects-detail {
+        padding: 20px 5px;
+    }
+
+
+    /* ---------- PROJECT TITLE ---------- */
+
+    .titles {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .projects-detail h2 {
+        font-size: 28px;
+    }
+
+    .titles span {
+        margin-left: 0;
+        padding: 5px 8px;
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+
+    /* ---------- DESCRIPTION ---------- */
+
+    .projects-detail p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-top: 18px;
+        margin-bottom: 12px;
+    }
+
+
+    /* ---------- TECHNOLOGIES ---------- */
+
+    .used h3 {
+        margin: 15px 0;
+        font-size: 17px;
+    }
+
+    .used span {
+        display: inline-block;
+        margin: 4px;
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+
+
+    /* ---------- BUTTONS ---------- */
+
+    .hero-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-right {
+        position: static;
+        transform: none;
+    }
+
+}
+
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 480px) {
+
+    /* ---------- NAVBAR ---------- */
+
+    .navbar {
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .navbar nav {
+        gap: 18px;
+    }
+
+    .navbar nav a {
+        font-size: 13px;
+    }
+
+
+    /* ---------- PROJECT PAGE ---------- */
+
+    .featured-projects h1 {
+        font-size: 30px;
+    }
+
+    .thanks {
+        font-size: 14px;
+    }
+
+
+    /* ---------- PROJECT CARD ---------- */
+
+    .projects-detail {
+        padding: 15px 3px;
+    }
+
+    .projects-detail h2 {
+        font-size: 24px;
+    }
+
+    .titles {
+        gap: 6px;
+    }
+
+    .titles span {
+        font-size: 9px;
+        padding: 4px 6px;
+    }
+
+
+    /* ---------- DESCRIPTION ---------- */
+
+    .projects-detail p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    /* ---------- TECHNOLOGIES ---------- */
+
+    .used h3 {
+        font-size: 15px;
+    }
+
+    .used span {
+        font-size: 11px;
+        padding: 4px 7px;
+        margin: 3px;
+    }
+
+
+    /* ---------- BUTTONS ---------- */
+
+    .hero-buttons {
+        gap: 8px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        padding: 9px 12px;
+        font-size: 12px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+        font-size: 12px;
+    }
+
+}
