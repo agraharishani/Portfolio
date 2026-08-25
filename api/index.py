@@ -1,7 +1,10 @@
-from flask import Flask, render_template
-from app import app
+from flask import Flask, render_template, url_for
 
-app = Flask(__name__)
+app = Flask(__name__,
+            static_url_path="",
+            static_folder='public',
+            template_folder='templates'
+            )
 
 @app.route("/")
 def home():
