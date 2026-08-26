@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shani-portfolio</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
@@ -18,9 +18,9 @@
     </div>
 
     <nav>
-        <a href="/" class="active">Home</a>
-        <a href="/my-projects" class="unactive">My Projects</a>
-        <a href="/about" class="unactive">About Me</a>
+        <a href="{{ url_for('home')}}" class="active">Home</a>
+        <a href="{{ url_for('myprojects')}}" class="unactive">My Projects</a>
+        <a href="{{ url_for('about')}}" class="unactive">About Me</a>
     </nav>
 
 </header>
@@ -46,11 +46,11 @@
 
         <div class="hero-buttons">
 
-            <a href="/my-projects" class="primary-btn">
+            <a href="{{ url_for('myprojects')}}" class="primary-btn">
                 View My Projects &rarr;
             </a>
 
-            <a href="/about" class="secondary-btn">
+            <a href="{{ url_for('about')}}" class="secondary-btn">
                 About Me
             </a>
 
@@ -82,7 +82,7 @@
 
     <div class="hero-image">
       <div class="hero-image">
-            <img src="/images/image.jpeg">
+            <img src="{{ url_for('static',filename='images/image.jpeg')}}">
       </div>
     </div>
 
@@ -134,7 +134,7 @@
 
     <div class="projects">
        <div class="projects-img">
-        <img src="/images/freelancehub.png">
+        <img src="{{ url_for('static',filename='images/freelancehub.png')}}">
        </div>
 
        <div class="projects-detail">
@@ -173,7 +173,7 @@
     </div>
 </section>
 
-<div class="view"><a href="/my-projects"> View More &rarr;</a></div>
+<div class="view"><a href="{{ url_for('myprojects')}}"> View More &rarr;</a></div>
 
 <!-- ================= CONTACT ME ================= -->
 

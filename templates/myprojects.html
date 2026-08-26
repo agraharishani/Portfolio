@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> My Projects | Shani Agrahari </title>
-    <link rel="stylesheet" href="/css/projects.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/projects.css')}}">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
@@ -18,9 +18,9 @@
     </div>
 
     <nav>
-        <a href="/" class="unactive">Home</a>
-        <a href="/my-projects" class="active">My Projects</a>
-        <a href="/about" class="unactive">About Me</a>
+        <a href="{{ url_for('home')}}" class="unactive">Home</a>
+        <a href="{{ url_for('myprojects')}}" class="active">My Projects</a>
+        <a href="{{ url_for('about')}}" class="unactive">About Me</a>
     </nav>
 
 </header>
@@ -31,7 +31,7 @@
 
     <div class="projects">
        <div class="projects-img">
-        <img src="/images/freelancehub.png">
+        <img src="{{ url_for('static',filename='images/freelancehub.png')}}">
        </div>
 
        <div class="projects-detail">
@@ -70,7 +70,7 @@
     </div>
     <div class="projects">
        <div class="projects-img">
-        <img src="/images/cawalagyan.png">
+        <img src="{{ url_for('static',filename='images/cawalagyan.png')}}">
        </div>
 
        <div class="projects-detail">
